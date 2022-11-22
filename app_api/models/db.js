@@ -1,7 +1,7 @@
 var mongoose=require("mongoose");
 require("./mekansema");
 //var dbURI = 'mongodb://localhost/mekanbul'; 
-var dbURI="mongodb+srv://ahmet1234:1234@mekanbul.qpke1ce.mongodb.net/mekanbul?retryWrites=true&w=majority"; 
+var dbURI="mongodb+srv://ahmet:1234@mekanbul.qw6mcab.mongodb.net/mekanbul?retryWrites=true&w=majority"; 
 mongoose.connect(dbURI);
 
 function kapat(msg,callback){
@@ -31,4 +31,3 @@ mongoose.connection.on("disconnected",function(){
 mongoose.connection.on("error",function(){
     console.log("Bağlantı hatası.");
 })
-
